@@ -1,9 +1,7 @@
-import json
+
 import requests
 import configparser
 import sys, os
-import datetime as dt
-from datetime import timedelta
 
 
 # Press the green button in the gutter to run the script.
