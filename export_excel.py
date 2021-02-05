@@ -15,7 +15,10 @@ if __name__ == '__main__':
     password = config['DEFAULT']['password']
     filename = config['DEFAULT']['filename']
 
-    auth_data = "{\"action\":\"login\",\"data\":{\"login\":\"" + login + "\",\"password\":\"" + password + "\"}}"
+    # auth_data = "{\"action\":\"login\",\"data\":{\"login\":\"" + login + "\",\"password\":\"" + password + "\"}}"
+    # print(auth_data)
+    auth_data = '{"action":"login","data":{"login":"' + login + '","password":"' + password + '"}}'
+    print(auth_data)
 
     req = requests.Session()
     responce = req.post(hostname + '/action/login', data=auth_data)
